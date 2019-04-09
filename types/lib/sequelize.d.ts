@@ -90,15 +90,15 @@ export interface PoolOptions {
  * Interface for replication Options in the sequelize constructor
  */
 export interface ReplicationOptions {
-  read?: {
+  read: {
     host?: string;
     port?: string | number;
     username?: string;
     password?: string;
     database?: string;
-  };
+  }[];
 
-  write?: {
+  write: {
     host?: string;
     port?: string | number;
     username?: string;
